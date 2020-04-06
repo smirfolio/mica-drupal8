@@ -1,0 +1,43 @@
+<?php
+/**
+* @file
+* Contains obiba_mica_angular_app.module.
+* obiba Mica Angular app integration
+*/
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function obiba_mica_angular_app_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mica_external_entities module.
+    case 'help.page.obiba_mica_angular_app':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Obiba Mica Angular app integration') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function obiba_mica_angular_app_theme($existing, $type, $theme, $path){
+
+  $path_views = $path . '/js/search/views';
+  return [
+    'obiba-mica-angular-app' => [
+      'variables' => [
+        'module_caller' => 'obiba_mica_repository',
+      ],
+    ],
+    'search-view-header' => [
+      'path'=> $path_views,
+    ]
+  ];
+
+}

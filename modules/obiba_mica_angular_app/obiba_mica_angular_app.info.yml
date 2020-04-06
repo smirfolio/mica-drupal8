@@ -1,0 +1,10 @@
+name: Obiba Mica angular app
+type: module
+description: 'Mica angular app bootstrapping'
+core: 8.x
+package: 'Obiba Mica'
+dependencies:
+  - libraries
+  - obiba_mica
+library_dependencies:
+  - angular-app

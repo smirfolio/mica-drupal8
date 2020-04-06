@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Contains obiba_mica_external_entities.module.
+ * Obiba Mica External Entities
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function obiba_mica_external_entities_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mica_external_entities module.
+    case 'help.page.obiba_mica_external_entities':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Obiba Mica External Entities') . '</p>';
+      return $output;
+
+    default:
+  }
+}

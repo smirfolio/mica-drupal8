@@ -1,0 +1,73 @@
+angular-app:
+  remote: https://code.highcharts.com/highcharts.js
+  version: VERSION
+  license:
+    name: Non-commercial
+    url: https://creativecommons.org/licenses/by-nc/3.0/
+    gpl-compatible: false
+  js:
+    /libraries/angular-app/angular/angular.min.js: {}
+    /libraries/angular-app/obiba-shims/dist/obiba-shims.js: {}
+    /libraries/angular-app/angular-resource/angular-resource.min.js: {}
+    /libraries/angular-app/angular-bootstrap/ui-bootstrap-tpls.min.js: {}
+    /libraries/angular-app/angular-cookies/angular-cookies.min.js: {}
+    /libraries/angular-app/angular-sanitize/angular-sanitize.min.js: {}
+    /libraries/angular-app/angular-route/angular-route.js: {}
+    /libraries/angular-app/tv4/tv4.js: {}
+    /libraries/angular-app/objectpath/lib/ObjectPath.js: {}
+    /libraries/angular-app/angular-schema-form/dist/schema-form.js: {}
+    /libraries/angular-app/angular-translate/angular-translate.js: {}
+    /libraries/angular-app/angular-translate-loader-url/angular-translate-loader-url.js: {}
+    /libraries/angular-app/marked/lib/marked.js: {}
+    /libraries/angular-app/angular-marked/dist/angular-marked.js: {}
+    /libraries/angular-app/moment/moment.js: {}
+    /libraries/angular-app/moment/min/locales.min.js: {}
+    /libraries/angular-app/angular-moment/angular-moment.js: {}
+    /libraries/angular-app/angular-strap/dist/angular-strap.js: {}
+    /libraries/angular-app/rql-nodojo/js/rql.min.js: {}
+    /libraries/angular-app/angular-strap/dist/angular-strap.tpl.js: {}
+    /libraries/angular-app/angular-schema-form-datetimepicker/schema-form-date-time-picker.js: {}
+    /libraries/angular-app/angular-schema-form-bootstrap/bootstrap-decorator.min.js: {}
+    /libraries/angular-app/filesize/lib/filesize.min.js: {}
+    /libraries/angular-app/clipboard/dist/clipboard.min.js: {}
+    /libraries/angular-app/ng-obiba/dist/ng-obiba.js: {}
+    /libraries/angular-app/ng-obiba-mica/dist/ng-obiba-mica.js: {}
+    /libraries/angular-app/ngclipboard/dist/ngclipboard.min.js: {}
+    /libraries/angular-app/ng-file-upload/ng-file-upload-all.min.js: {}
+    /libraries/angular-app/angular-recaptcha/release/angular-recaptcha.min.js: {}
+    /libraries/angular-app/angular-local-storage/dist/angular-local-storage.min.js: {}
+    /libraries/angular-app/angular-utils-pagination/dirPagination.js: {}
+    /libraries/angular-app/angular-ui-select/dist/select.js: {}
+    /libraries/angular-app/sf-obiba-file-upload/dist/sf-obiba-file-upload.min.js: {}
+    /libraries/angular-app/sf-checkboxgroup/dist/sf-checkboxgroup.min.js: {}
+    /libraries/angular-app/sf-radio-group-collection/dist/sf-radio-group-collection.js: {}
+    /libraries/angular-app/d3/d3.js: {}
+    /libraries/angular-app/nvd3/build/nv.d3.js: {}
+    /libraries/angular-app/angular-nvd3/dist/angular-nvd3.js: {}
+  css:
+    base:
+      /libraries/angular-app/ng-obiba/dist/css/ng-obiba.css: {}
+      /libraries/angular-app/ng-obiba-mica/dist/css/ng-obiba-mica.css: {}
+      /libraries/angular-app/angular-ui-select/dist/select.css: {}
+      /libraries/angular-app/nvd3/build/nv.d3.css: {}
+obiba_mica_angular_app:
+  version: VERSION
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+  js:
+    js/http-auth-interceptor.js: {}
+    js/app.js: {}
+obiba_mica_search:
+  version: VERSION
+  js:
+    js/search/search.js: {}
+    js/config/config.js: {}
+    js/config/config-service.js: {}
+obiba_mica_list:
+  version: VERSION
+  js:
+    js/lists/lists.js: {}
+    js/config/config.js: {}
+    js/config/config-service.js: {}
+

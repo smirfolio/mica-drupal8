@@ -1,0 +1,33 @@
+obiba_mica_angular_app.search:
+  path: '/mica/repository'
+  defaults:
+    _controller: '\Drupal\obiba_mica_angular_app\Controller\SearchController::repository'
+    _title: 'Search'
+  requirements:
+    _permission: 'access content'
+obiba_mica_angular_app.studyList:
+  path: '/mica/study'
+  defaults:
+    _title: 'Individual Studies'
+  requirements:
+    _permission: 'access content'
+obiba_mica_angular_app.individualStudyList:
+  path: '/mica/study/individual-study'
+  defaults:
+    _controller: '\Drupal\obiba_mica_angular_app\Controller\ListController::studyList'
+    _title: 'Individual Studies'
+  requirements:
+    _permission: 'access content'
+obiba_mica_angular_app.harmonizationStudyList:
+  path: '/mica/study/harmonization-study'
+  defaults:
+    _controller: '\Drupal\obiba_mica_angular_app\Controller\ListController::studyList'
+    _title: 'Harmonization Studies'
+  requirements:
+    _permission: 'access content'
+obiba_mica_angular_app.theme:
+  path: '/mica/obiba_mica_app_angular_view_template/{themeKey}'
+  defaults:
+    _controller: '\Drupal\obiba_mica_angular_app\Controller\AngularAppController::getTheme'
+  requirements:
+    _permission: 'access content'

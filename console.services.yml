@@ -1,0 +1,6 @@
+services:
+  console.downloadJs:
+    class: Drupal\obiba_mica\Command\DownloadJsCommand
+    arguments: []
+    tags:
+      - { name: drupal.command }

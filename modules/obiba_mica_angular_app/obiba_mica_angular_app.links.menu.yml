@@ -1,0 +1,29 @@
+obiba_mica_angular_app.studies:
+  title: 'Studies'
+  description: 'Studies list'
+  parent: main
+  menu_name: main
+  route_name: obiba_mica_angular_app.studyList
+  expanded: TRUE
+obiba_mica_angular_app.individualStudyList:
+  title: 'Individual Studies'
+  description: 'Individual Studies list'
+  parent: obiba_mica_angular_app.studies
+  route_name: obiba_mica_angular_app.individualStudyList
+  options:
+    fragment: '/search?query=study(in(Mica_study.className,Study),sort(name))'
+obiba_mica_angular_app.harmonizationStudyList:
+  title: 'Harmonization  Studies'
+  description: 'Harmonization Studies list'
+  parent: obiba_mica_angular_app.studies
+  route_name: obiba_mica_angular_app.harmonizationStudyList
+  options:
+    fragment: '/search?query=study(in(Mica_study.className,HarmonizationStudy),sort(name))'
+obiba_mica_angular_app.search:
+  title: 'Search'
+  description: 'Search'
+  parent: main
+  menu_name: main
+  route_name: obiba_mica_angular_app.search
+  options:
+    fragment: '/search'

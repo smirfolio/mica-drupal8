@@ -1,0 +1,27 @@
+plugin.plugin_configuration.external_entities_storage_client.mica_rest:
+  type: config_object
+  label: 'External entities REST storage client settings'
+  mapping:
+    mica_endpoint:
+      type: string
+      label: 'Mica Endpoint'
+    list_path:
+      type: string
+      label: 'List path'
+    document_path:
+      type: string
+      label: 'Document Path'
+    response_format:
+      type: string
+      label: 'Response format'
+    basic_authentication:
+      type: mapping
+      label: 'Basic Authentication Anonymous user'
+      mapping:
+        anonymous_login:
+          type: string
+          label: 'Anonymous user name'
+        anonymous_password:
+          type: string
+          label: 'Anonymous user password'
+

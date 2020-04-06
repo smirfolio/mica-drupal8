@@ -1,0 +1,8 @@
+name: 'Obiba Mica External Entities'
+type: module
+description: 'Obiba Mica External Entities'
+core: 8.x
+package: 'Obiba Mica'
+dependencies:
+  - obiba_mica
+  - external_entities
